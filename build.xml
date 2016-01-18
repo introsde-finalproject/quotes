@@ -41,10 +41,10 @@
     </target>
 
     <target name="compile" depends="init">
-        <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="classpath.id" includeAntRuntime="false"></javac>
+        <javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="classpath.id" includeAntRuntime="false"/>
     </target>
 
     <target name="start" depends="compile" >
-        <java classname="introsde.finalproject.quotes.ServiceStandalone" classpath="${build.dir}" classpathref="classpath.id" fork="true"></java>
+        <java classname="introsde.finalproject.quotes.ServiceStandalone" classpath="${build.dir}" classpathref="classpath.id" fork="true"/>
     </target>
 </project>

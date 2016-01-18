@@ -12,10 +12,7 @@ public class ServiceStandalone {
     {
     	String PROTOCOL = "http://";
         String PORT = "7004";
-        String HOSTNAME = InetAddress.getLocalHost().getHostAddress();
-        if (HOSTNAME.equals("127.0.0.1")) {
-            HOSTNAME = "localhost";
-        }
+        String HOSTNAME = "0.0.0.0";
 
         URI baseUrl = new URI(PROTOCOL+HOSTNAME+":"+PORT+"/");
 
